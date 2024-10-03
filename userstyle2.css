@@ -1,0 +1,173 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Ensure scrolling behavior */
+body {
+    overflow-y: auto; /* or overflow-y: scroll; */
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+/* Division section */
+.division-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc; /* Adding a border around the division section */
+    border-radius: 10px; /* Optional: Adding rounded corners */
+    max-width: 600px; /* Limiting the maximum width */
+    background-color: #f9f9f9; /* Optional: Adding a background color */
+}
+
+.division-section h2 {
+    margin-bottom: 20px; /* Adding some space below the heading */
+}
+
+.division-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.division-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 50%; /* Divide into 2 columns */
+    float: left; /* Float the items to the left */
+}
+
+.division-item img {
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Maintain aspect ratio and fill the container */
+}
+
+.division-item p {
+    margin-top: 10px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Adjust size and style for gallery items */
+.gallery-item {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.33% - 20px); /* Adjust width to fit three items in a row */
+    max-width: 150px; /* Set maximum width for each item */
+}
+
+/* Add hover effect to gallery items */
+.gallery-item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Adjust size and style for gallery images */
+.gallery-item img {
+    width: 100%; /* Ensure images fill their container */
+    height: auto;
+    max-height: 150px; /* Set maximum height for each image */
+    object-fit: cover; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
+
+/* Add hover effect to gallery images */
+.gallery-item:hover img {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+/* Add style to gallery item titles */
+.gallery-item .title {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Center the reCAPTCHA */
+.g-recaptcha {
+    margin: 20px auto;
+}
+
+/* Center the submit button */
+.suggestion-button {
+    margin: 20px auto;
+}

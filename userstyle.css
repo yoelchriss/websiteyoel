@@ -1,0 +1,167 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Hero section */
+.hero-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+/* News section */
+.news-section {
+    padding: 20px;
+}
+
+.news-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    flex: 1 0 45%;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.news-item a:hover {
+    color: #007BFF;
+}
+
+/* Gallery section */
+.gallery-section {
+    padding: 20px;
+}
+
+.gallery-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    flex: 1 0 45%;
+    margin: 10px;
+    text-align: center;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.gallery-item a:hover {
+    color: #007BFF;
+}
+
+/* Donate section */
+.donate-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.donate-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.donate-button:hover {
+    background-color: #0056b3;
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
